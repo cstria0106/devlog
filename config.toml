@@ -1,0 +1,4 @@
+baseURL = 'https://cstria0106.github.io/devlog'
+languageCode = 'ko-kr'
+title = 'Goorm.devlog'
+theme = "paper-mod"
