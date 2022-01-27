@@ -1,7 +1,7 @@
 ---
 title: "개발일지#1"
 date: 2022-01-25T18:05:56+09:00
-draft: true
+draft: false
 ---
 
 # 개발일지 #1
