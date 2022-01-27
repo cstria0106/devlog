@@ -5,9 +5,10 @@
 <meta name=robots content="index, follow">
 <title>개발일지#1 | Goorm.me</title>
 <meta name=keywords content>
-<meta name=description content="개발일지 #1 메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
+<meta name=description content="메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
 썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.
-구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.">
+구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.
+이 저장소의 이슈에서 코드를 갖고왔다.">
 <meta name=author content>
 <link rel=canonical href=https://goorm.me/post/devlog-1/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css integrity="sha256-yIlj/i15RiAA/Q+xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as=style>
@@ -24,20 +25,22 @@
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
 </noscript><meta property="og:title" content="개발일지#1">
-<meta property="og:description" content="개발일지 #1 메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
+<meta property="og:description" content="메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
 썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.
-구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.">
+구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.
+이 저장소의 이슈에서 코드를 갖고왔다.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://goorm.me/post/devlog-1/"><meta property="article:section" content="post">
 <meta property="article:published_time" content="2022-01-25T18:05:56+09:00">
 <meta property="article:modified_time" content="2022-01-25T18:05:56+09:00">
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="개발일지#1">
-<meta name=twitter:description content="개발일지 #1 메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
+<meta name=twitter:description content="메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
 썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.
-구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.">
+구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.
+이 저장소의 이슈에서 코드를 갖고왔다.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://goorm.me/post/"},{"@type":"ListItem","position":3,"name":"개발일지#1","item":"https://goorm.me/post/devlog-1/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"개발일지#1","name":"개발일지#1","description":"개발일지 #1 메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.\n썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.\n구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.","keywords":[],"articleBody":"개발일지 #1 메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.\n썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.\n구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.\n이 저장소의 이슈에서 코드를 갖고왔다. 데코레이터에 대해 조금 더 공부해보면 좋을듯.\nimport { ValidateIf, ValidationOptions } from \"class-validator\"; // Code from: https://github.com/mentatxx/class-validator-is-nullable/issues/3  export function IsNullable(options?: ValidationOptions): PropertyDecorator { return function IsNullableDecorator( prototype: Object, propertyKey: string | symbol ): void { ValidateIf((obj) = obj[propertyKey] !== null, options)( prototype, propertyKey ); }; }   리뷰 수정 시 imageOrder 값을 지정하지 않은 것과 비어있는 것을 구분하게 하고 싶었는데, FormData에는 빈 배열이나 null 값을 필드로 사용할 수 없는 거 같아 JSON 문자열을 받도록 했다.\nclass-transformer를 이용하여 다음과 같이 문자열을 JSON으로 변환되도록 하였다. 놀랍게도 잘 작동한다!\nexport class UpdateReviewInputDto { // ...  @Type(() = String) @IsUndefinable() @IsArray() @ArrayMinSize(0) @ArrayMaxSize(10) @IsString({ each: true }) @Length(44, 44, { each: true }) imageOrder?: string[]; }   위와 같이 IsNumber 등을 구현하면 Type(() ⇒ Number) 를 따로 붙여주지 않아도 될거같다. 아래와 같이 IsNumber를 새로 구현했다.\nimport { ValidationOptions } from \"class-validator\"; import { Type } from \"class-transformer\"; export function IsNumber(options?: ValidationOptions): PropertyDecorator { return function IsNumberDecorator( prototype: Object, propertyKey: string | symbol ): void { Type(() = Number)(prototype, propertyKey); IsNumber(options)(prototype, propertyKey); }; }   ","wordCount":"238","inLanguage":"en","datePublished":"2022-01-25T18:05:56+09:00","dateModified":"2022-01-25T18:05:56+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://goorm.me/post/devlog-1/"},"publisher":{"@type":"Organization","name":"Goorm.me","logo":{"@type":"ImageObject","url":"https://goorm.me/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"개발일지#1","name":"개발일지#1","description":"메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.\n썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.\n구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.\n이 저장소의 이슈에서 코드를 갖고왔다.","keywords":[],"articleBody":"메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.\n썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.\n구 백엔드 수정  감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다.  신규 백엔드 수정   IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다.\n이 저장소의 이슈에서 코드를 갖고왔다. 데코레이터에 대해 조금 더 공부해보면 좋을듯.\nimport { ValidateIf, ValidationOptions } from \"class-validator\"; // Code from: https://github.com/mentatxx/class-validator-is-nullable/issues/3  export function IsNullable(options?: ValidationOptions): PropertyDecorator { return function IsNullableDecorator( prototype: Object, propertyKey: string | symbol ): void { ValidateIf((obj) = obj[propertyKey] !== null, options)( prototype, propertyKey ); }; }   리뷰 수정 시 imageOrder 값을 지정하지 않은 것과 비어있는 것을 구분하게 하고 싶었는데, FormData에는 빈 배열이나 null 값을 필드로 사용할 수 없는 거 같아 JSON 문자열을 받도록 했다.\nclass-transformer를 이용하여 다음과 같이 문자열을 JSON으로 변환되도록 하였다. 놀랍게도 잘 작동한다!\nexport class UpdateReviewInputDto { // ...  @Type(() = String) @IsUndefinable() @IsArray() @ArrayMinSize(0) @ArrayMaxSize(10) @IsString({ each: true }) @Length(44, 44, { each: true }) imageOrder?: string[]; }   위와 같이 IsNumber 등을 구현하면 Type(() ⇒ Number) 를 따로 붙여주지 않아도 될거같다. 아래와 같이 IsNumber를 새로 구현했다.\nimport { ValidationOptions } from \"class-validator\"; import { Type } from \"class-transformer\"; export function IsNumber(options?: ValidationOptions): PropertyDecorator { return function IsNumberDecorator( prototype: Object, propertyKey: string | symbol ): void { Type(() = Number)(prototype, propertyKey); IsNumber(options)(prototype, propertyKey); }; }   ","wordCount":"236","inLanguage":"en","datePublished":"2022-01-25T18:05:56+09:00","dateModified":"2022-01-25T18:05:56+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://goorm.me/post/devlog-1/"},"publisher":{"@type":"Organization","name":"Goorm.me","logo":{"@type":"ImageObject","url":"https://goorm.me/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -63,8 +66,7 @@
 <div class=post-meta><span title="2022-01-25 18:05:56 +0900 +0900">January 25, 2022</span>
 </div>
 </header>
-<div class=post-content><h1 id=개발일지-1>개발일지 #1<a hidden class=anchor aria-hidden=true href=#개발일지-1>#</a></h1>
-<h2 id=메일-정리하기>메일 정리하기<a hidden class=anchor aria-hidden=true href=#메일-정리하기>#</a></h2>
+<div class=post-content><h2 id=메일-정리하기>메일 정리하기<a hidden class=anchor aria-hidden=true href=#메일-정리하기>#</a></h2>
 <p>메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.</p>
 <p>썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.</p>
 <h2 id=구-백엔드-수정>구 백엔드 수정<a hidden class=anchor aria-hidden=true href=#구-백엔드-수정>#</a></h2>
