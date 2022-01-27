@@ -47,6 +47,34 @@
 <main class=main>
 <article class=first-entry>
 <header class=entry-header>
+<h2>개발일지#1
+</h2>
+</header>
+<section class=entry-content>
+<p>개발일지 #2 Hugo로 일지 쓰기 Notion에 쓰려다가 Hugo로 쓰는게 좋을 것 같아 옮겼다. 테마도 이쁘고 좋다…
+ECS 사용해보기 CodeBuild 등을 구성하다보니 그냥 파이프라인이 쓰고싶어져서 ECS로 배포하는 것까지 알아보았다. 이를 위해서 수정한건 설정을 toml 파일에서 환경변수로 옮긴 것이다. dotenv 파일도 다음과 같이 구성할 수 있고 class-transformer를 통해 올바른 자료형으로 변환되니 사용하는데에 불편한 것은 없을 것 같다.
+설정파일
+database.host=localhost database.port=5432 database.name=root database.username=user database.password=password database.log=true database.sync=true jwt.secret=1234 Nest에서 사용하기
+ConfigModule.forRoot({ isGlobal: true, // 개발 환경에서만 ....</p>
+</section>
+<footer class=entry-footer><span title="2022-01-26 18:23:23 +0900 +0900">January 26, 2022</span></footer>
+<a class=entry-link aria-label="post link to 개발일지#1" href=https://goorm.me/post/devlog-2/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>개발일지#1
+</h2>
+</header>
+<section class=entry-content>
+<p>개발일지 #1 메일 정리하기 메일을 쉽게 정리하고 싶어서 찾아보니까 “보낸이로 묶어보기” 기능을 제공하는 메일 클라이언트가 별로 없더라.
+썬더버드를 우연히 깔아봤는데 mac에서 보기 나쁘지도 않고 위에 말한 기능을 제공해서 써봤는데 매우 좋다. 계속 쓸 거 같다.
+구 백엔드 수정 감사 카드 알림을 전송할때 Restaurant 인스턴스를 그대로 넣어버려서 “[object SequelizeInstance:Restaurant]” 처럼 나오는 문제가 있었다. 이런식의 실수를 조심해야겠다. 신규 백엔드 수정 IsNullable과 IsUndefinable 데코레이터를 구현해서 더 정확한 Validation이 가능해졌다....</p>
+</section>
+<footer class=entry-footer><span title="2022-01-25 18:05:56 +0900 +0900">January 25, 2022</span></footer>
+<a class=entry-link aria-label="post link to 개발일지#1" href=https://goorm.me/post/devlog-1/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>Hello, world!
 </h2>
 </header>
